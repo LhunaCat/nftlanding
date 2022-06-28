@@ -1,0 +1,402 @@
+p,
+h1,
+h2,
+h3,
+h5,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 40px;
+}
+
+h5 {
+  font-size: 25px;
+}
+
+p,
+a,
+button {
+  font-size: 25px;
+}
+
+section {
+  padding: 0 40px;
+}
+
+button {
+  border: 5px solid transparent;
+  border-image: url("./img/background.jpg") 30 round;
+  background-color: white;
+  /*neveikia border-radius su border-image, tai palikau*/
+  border-radius: 40%;
+  width: 150px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+/*========================= HEADER ===========================*/
+
+header {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  display: none;
+}
+
+nav i {
+  font-size: 30px;
+  color: gray;
+}
+
+/* ======================== AN NFT LIKE NO OTHER ===============*/
+
+.no-other {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  padding-right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 0;
+}
+
+.no-other div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.no-other p:first-child {
+  color: rgb(255, 0, 221);
+  font-weight: bold;
+}
+
+.no-other h1 {
+  font-weight: bold;
+  padding: 40px 0;
+}
+
+.no-other p {
+  color: gray;
+}
+
+.no-other img {
+  height: 60vh;
+  width: 150px;
+  object-fit: cover;
+  object-position: 30% 0;
+}
+
+/*================================ FREE NFT FOR EARLY BIRDS =====================*/
+
+.free-nft-banner {
+  height: 35vh;
+  background-image: url(./img/background.svg);
+  border-radius: 0;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.free-nft-banner h3 {
+  padding-top: 80px;
+}
+
+.free-nft-banner p {
+  padding: 20px 0 50px 0;
+}
+
+/*=============================== COMPANIES ==========================*/
+
+.companies {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.companies img {
+  width: 30vw;
+}
+
+.companies img:nth-child(3) {
+  display: none;
+}
+
+/*================================ LE AUCTION ================================*/
+
+.auction {
+  border-bottom: 1px solid rgb(184, 184, 184);
+  padding-bottom: 50px;
+}
+
+#we-have {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#we-have {
+  color: rgb(58, 58, 58);
+}
+
+#we-have a {
+  color: rgb(58, 58, 58);
+}
+
+.nft-container {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.NFT {
+  background-color: rgb(224, 224, 224);
+  width: 290px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.nft-info {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+
+.bid,
+.price,
+.nft-info p:last-child {
+  text-align: end;
+}
+
+.orange {
+  color: orangered;
+  font-size: 10px;
+}
+
+.bid {
+  color: gray;
+  font-size: 10px;
+}
+
+.orange,
+.bid {
+  padding-bottom: 10px;
+}
+
+.price {
+  display: flex;
+  justify-content: end;
+}
+
+.gray {
+  padding-top: 10px;
+  color: gray;
+  font-size: 20px;
+}
+
+/*=============================== NO OTHER AGAIN =======================*/
+
+.no-other2 {
+  padding-bottom: 0;
+  border-bottom: 1px solid rgb(184, 184, 184);
+}
+
+.no-other2 h2 {
+  padding: 40px 0;
+}
+
+.no-other2 img {
+  object-position: 0 0;
+  align-self: flex-end;
+}
+
+/*=============================== FOOTER =============================*/
+
+footer {
+  padding: 60px 40px 80px 40px;
+}
+
+.socials {
+  padding-bottom: 40px;
+}
+
+.socials p {
+  padding: 20px 0;
+  color: gray;
+}
+
+.socials i {
+  font-size: 25px;
+  color: gray;
+  padding-right: 15px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.links p {
+  font-weight: bolder;
+  padding-bottom: 30px;
+}
+
+.links a {
+  display: inline-block;
+  padding-bottom: 15px;
+  text-decoration: none;
+  color: gray;
+}
+
+.copyright {
+  padding-top: 40px;
+  color: gray;
+}
+
+.copyright p:last-child {
+  display: none;
+}
+
+/*===================================== MEDIA QUERIE ==========================*/
+
+@media only screen and (min-width: 769px) {
+  section {
+    padding: 0 80px;
+  }
+
+  h1 {
+    font-size: 100px;
+  }
+
+  /*=================== HEADER ===============*/
+
+  header {
+    padding: 80px;
+  }
+
+  nav .fa-bars {
+    display: none;
+  }
+
+  nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 15px;
+    color: black;
+  }
+
+  nav a:last-of-type {
+    color: rgb(255, 0, 221);
+  }
+
+  /*============ AN NFT LIKE NO OTHER ============*/
+
+  .no-other {
+    height: 700px;
+  }
+
+  .no-other img {
+    width: 50vw;
+    max-width: 800px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /*============ FREE NFT FOR EARLY BIRDS ============*/
+
+  .free-nft-banner {
+    margin: 0 80px;
+    border-radius: 10px;
+    padding-left: 50px;
+  }
+
+  /*==================== COMPANIES ===================*/
+
+  .companies {
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-columns: 100px;
+    justify-content: space-between;
+    overflow: visible;
+    padding: 100px 80px;
+  }
+
+  .companies img {
+    width: 10vw;
+    align-self: center;
+  }
+
+  .companies img:nth-child(2),
+  .companies img:nth-child(3),
+  .companies img:nth-child(4) {
+    justify-self: center;
+  }
+
+  .companies img:last-child {
+    justify-self: end;
+  }
+
+  .companies img:nth-child(3) {
+    display: inline-block;
+  }
+
+  /*=================== LE AUCTION ==================*/
+
+  #we-have {
+    padding-bottom: 50px;
+  }
+
+  .nft-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /*=================== NO OTHER AGAIN =============*/
+
+  .no-other {
+    padding-right: 80px;
+  }
+
+  .no-other2 img {
+    max-width: 300px;
+  }
+
+  /*==================== FOOTER =====================*/
+
+  .flex-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .links {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .copyright p:last-child {
+    display: block;
+  }
+}
